@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bouncy</title>
+      <!--[if lt IE 9]>
+      <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+      <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+      <link rel="stylesheet" type="text/css" href="styles/reset.css">
+      <link rel="stylesheet" href="styles/bootstrap.min.css">
+      <link rel="stylesheet/less" type="text/css" href="styles/style.less">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300|Source+Sans+Pro:300,300i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+      <link rel="stylesheet" href="fonts/big_john.css">
+      <link rel="stylesheet" href="computer_mouse/stylesheet.css">
+      <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png"/>
+      <script src="less.min.js"></script>
+   </head>
+   <body>
+      <script src="js/jssor.slider-26.3.0.min.js" type="text/javascript"></script>
+      <script type="text/javascript">
+         jssor_1_slider_init = function() {
+         
+             var jssor_1_options = {
+               $AutoPlay: 1,
+               $DragOrientation: 2,
+               $PlayOrientation: 2,
+               $Align: 0,
+               $BulletNavigatorOptions: {
+                 $Class: $JssorBulletNavigator$,
+                 $Orientation: 2
+               }
+             };
+         
+             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+         
+             /*#region responsive code begin*/
+         
+             var MAX_WIDTH = 1349;
+         
+             function ScaleSlider() {
+                 var containerElement = jssor_1_slider.$Elmt.parentNode;
+                 var containerWidth = containerElement.clientWidth;
+         
+                 if (containerWidth) {
+         
+                     var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+         
+                     jssor_1_slider.$ScaleWidth(expectedWidth);
+                 }
+                 else {
+                     window.setTimeout(ScaleSlider, 30);
+                 }
+             }
+         
+             ScaleSlider();
+         
+             $Jssor$.$AddEvent(window, "load", ScaleSlider);
+             $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+             /*#endregion responsive code end*/
+         };
+      </script>
+      
+      <div class="main_image_block">
+         <header>
+            <a class="logo" href="/">bouncy</a>
+            <ul class="menu">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Team</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </header>
+         <h1>We are code cafe</h1>
+         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+         <div> 
+            <i class="fa fa-angle-down" aria-hidden="true"></i> 
+         </div>
+      </div>
+      
+      <div class="about_us">
+         <div class="description">
+            <h2>This is Bouncy</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
+            <button type="button">Read More</button>
+         </div>
+         <img src="images/layer-4.png" alt="ipad">
+      </div>
+      
+      <div class="about_us_details">
+         <section>
+            <h2>Details about bouncy</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            <ul>
+               <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+               <li><i class="mouse">R</i></li>
+               <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i></li>
+            </ul>
+         </section>
+         <div class="wrapper">
+            <h3>Creative Ideas</h3>
+            <div>
+               <p>At <strong>vero</strong> eos et accusamus et iusto odio dignissimos <strong>ducimus</strong> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis praesentium voluptatum deleniti atque <strong>corrupti quos</strong> dolores et quas molestias <strong>excepturi</strong> sint occaecati cupiditate non provident, <strong>simi&shy;lique</strong> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+            </div>
+         </div>
+      </div>
+      
+      <div class="featured_work">
+         <section>
+            <h2>Featured projects</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+         </section>
+         <!--
+            <div class="works">
+                
+            </div>
+            -->
+         <div class="background_footer">
+            <p>At vero eos et <strong>accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis </p>
+            <button type="button">Submit Now</button>
+         </div>
+      </div>
+      <div class="our_services">
+         <section>
+            <h2>Our services</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+         </section>
+         <div>
+            <div class="circular_percentage_bar">
+               <img src="images/skills.png" alt="">
+            </div>
+            <ul>
+               <li><i class="fa fa-wrench" aria-hidden="true"></i></li>
+               <li><i class="fa fa-paint-brush" aria-hidden="true"></i></li>
+               <li><i class="fa fa-gamepad" aria-hidden="true"></i></li>
+               <li><i class="fa fa-plug" aria-hidden="true"></i></li>
+            </ul>
+            <div class="graphic_design">
+               <h3>Graphic Design</h3>
+               <p>At vero eos et accusamus et <strong>iusto</strong> odio dignissi&shy;mos <strong>ducimus</strong> qui blanditiis praesentium volup&shy;tatum deleniti</p>
+               <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <strong>similique sunt</strong> in culpa qui officia deserunt mollitia animi, id est laborum et do&shy;lorum fuga. </p>
+            </div>
+         </div>
+      </div>
+      
+      <div class="team_quotes">
+         <div>
+            <figure>
+               <img src="images/layer-7.png" alt="macbook">
+               <p class="logo" href="/">b<span>o</span>uncy</p>
+            </figure>
+            <section>
+               <h2>Impressed ?</h2>
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blandi&shy;tiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+               <p>- Abdullah Noman</p>
+               <p>Creatice Director, <span>Code Cafe</span></p>
+            </section>
+         </div>
+      </div>
+      
+      <div class="portfolio">
+         <section>
+            <h2>The portfolio</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+         </section>
+         <ul class="menu">
+            <li>
+               <div>
+                  <a href="#">All Works</a>
+                  <div class="short_line"></div>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <a href="#">Print</a>
+                  <div class="short_line"></div>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <a href="#">Identify</a>
+                  <div class="short_line"></div>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <a href="#">Branding</a>
+                  <div class="short_line"></div>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <a href="#">&#160;Web&#160;</a>
+                  <div class="short_line"></div>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <a href="#">HTML</a>
+                  <div class="short_line"></div>
+               </div>
+            </li>
+            <li>
+               <div>
+                  <a href="#">Wordpress</a>
+                  <div class="short_line"></div>
+               </div>
+            </li>
+         </ul>
+         <div class="gallery_flex_container">
+            <div class="image_flex_container">
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-86.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-90.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-92.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button class="shrink" type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button class="shrink" type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="image_flex_container">
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-87.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button class="shrink" type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button class="shrink" type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-95.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-96.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="image_flex_container">
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-91.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-89.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-94.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button class="shrink" type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button class="shrink" type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="image_flex_container">
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-88.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-93.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="image_wrapper">
+                  <img src="images/portfolio/layer-97.png" alt="">
+                  <div class="portfolio_hover">
+                     <div class="text">
+                        <h2>title here</h2>
+                        <div class="horisontal_line"></div>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        <div>
+                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <footer>
+            <p>At vero eos et <span>accusamus</span> et iusto odio <span>dignissimos</span> ducimus qui blanditiis </p>
+            <button type="button">Start Project</button>
+         </footer>
+      </div>
+      
+      <div class="team">
+         <section>
+            <h2>The team</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+         </section>
+         <div id="myCarousel1" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel1" data-slide-to="1"></li>
+               <li data-target="#myCarousel1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                  <div class="context">
+                     <img src="images/man.png" alt="">
+                     <aside>
+                        <div class="vertical_line"></div>
+                        <div class="person">
+                           <h3>Abdullah Noman</h3>
+                           <p>Creative Director, Code Cafe</p>
+                           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        </div>
+                        <div class="skills">
+                           <div class="conteiner">
+                              <p>80%</p>
+                              <p>Branding</p>
+                              <div class="progress_bar">
+                                 <div class="progress branding"></div>
+                              </div>
+                           </div>
+                           <div class="conteiner">
+                              <p>65%</p>
+                              <p>Design</p>
+                              <div class="progress_bar">
+                                 <div class="progress design"></div>
+                              </div>
+                           </div>
+                           <div class="conteiner">
+                              <p>75%</p>
+                              <p>User interface</p>
+                              <div class="progress_bar">
+                                 <div class="progress user_interface"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </aside>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="context">
+                     <img src="images/man.png" alt="">
+                     <aside>
+                        <div class="vertical_line"></div>
+                        <div class="person">
+                           <h3>Abdullah Noman</h3>
+                           <p>Creative Director, Code Cafe</p>
+                           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        </div>
+                        <div class="skills">
+                           <div class="conteiner">
+                              <p>80%</p>
+                              <p>Branding</p>
+                              <div class="progress_bar">
+                                 <div class="progress branding"></div>
+                              </div>
+                           </div>
+                           <div class="conteiner">
+                              <p>65%</p>
+                              <p>Design</p>
+                              <div class="progress_bar">
+                                 <div class="progress design"></div>
+                              </div>
+                           </div>
+                           <div class="conteiner">
+                              <p>75%</p>
+                              <p>User interface</p>
+                              <div class="progress_bar">
+                                 <div class="progress user_interface"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </aside>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="context">
+                     <img src="images/man.png" alt="">
+                     <aside>
+                        <div class="vertical_line"></div>
+                        <div class="person">
+                           <h3>Abdullah Noman</h3>
+                           <p>Creative Director, Code Cafe</p>
+                           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                        </div>
+                        <div class="skills">
+                           <div class="conteiner">
+                              <p>80%</p>
+                              <p>Branding</p>
+                              <div class="progress_bar">
+                                 <div class="progress branding"></div>
+                              </div>
+                           </div>
+                           <div class="conteiner">
+                              <p>65%</p>
+                              <p>Design</p>
+                              <div class="progress_bar">
+                                 <div class="progress design"></div>
+                              </div>
+                           </div>
+                           <div class="conteiner">
+                              <p>75%</p>
+                              <p>User interface</p>
+                              <div class="progress_bar">
+                                 <div class="progress user_interface"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </aside>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="team_cta">
+         <p>Already Loved Us? Let’s talk!</p>
+         <button type="button">Contact Us</button>
+      </div>
+      
+      <div class="testimonials">
+         <section>
+            <h2>Testimonials</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+         </section>
+         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="item active">
+                  <img src="images/rectangle-14.png" alt="">
+                  <div class="carousel-caption">
+                     <img src="images/layer-439.png" alt="">
+                     <div class="description">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vo&shy;luptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cu&shy;piditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                        <p>PARTHO</p>
+                        <p>FOUNDER, ARTWAYS BD</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="images/rectangle-14.png" alt="">
+                  <div class="carousel-caption">
+                     <img src="images/layer-439.png" alt="">
+                     <div class="description">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vo&shy;luptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cu&shy;piditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                        <p>PARTHO</p>
+                        <p>FOUNDER, ARTWAYS BD</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <img src="images/rectangle-14.png" alt="">
+                  <div class="carousel-caption">
+                     <img src="images/layer-439.png" alt="">
+                     <div class="description">
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vo&shy;luptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cu&shy;piditate non provident, similique sunt in culpa qui officia deserunt mollitia.</p>
+                        <p>PARTHO</p>
+                        <p>FOUNDER, ARTWAYS BD</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <!-- <div class="blog">
+         <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1349px;height:691px;overflow:hidden;visibility:hidden;">
+         
+            <div class="slider" data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1349px;height:691px;overflow:hidden;">
+                <div class="bg">
+                  <div class="title">
+                       <h2>Latest news</h2>
+                       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                   </div>
+                   <h3>The trending Landing Pages</h3>
+                   <p>by <span>Kabir Uddin</span></p>
+                   <p>6950 Likes - 243 Comments - 703 shares</p>
+                   <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  </p>
+                   <button>+ Read More</button>
+                </div>
+                <div class="bg">
+                    <div class="title">
+                       <h2>Latest videos</h2>
+                       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                   </div>
+                   <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png"/>
+                   <button>+ Read More</button>
+                </div>
+                <div  class="bg">
+                    <div class="title">
+                       <h2>Visit our blog</h2>
+                       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    </div>
+                    <p>by <span>Kabir Uddin</span></p>
+                    <p>6950 Likes - 243 Comments - 703 shares</p>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  </p>
+                    <button>+ Read More</button>
+                    
+                </div>
+            </div>
+            
+            <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:12px;right:12px;" data-autocenter="2" data-scale="0.5" data-scale-right="0.75">
+                <div data-u="prototype" class="i" style="width:12px;height:12px;">
+                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+                    </svg>
+                </div>
+            </div>
+         </div>
+         </div> -->
+         
+      <div class="our_price">
+         <section>
+            <h2>Our price</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+         </section>
+         <div class="plans">
+            <div class="container_price">
+               <div class="price">
+                  <h5>premium</h5>
+                  <p>$ 60</p>
+                  <p>Per Month</p>
+               </div>
+               <div class="price_hover">
+                  <ul>
+                     <li>Full Branding</li>
+                     <li>Project Management</li>
+                     <li>Unlimited Revisions</li>
+                     <li>24/7 h Service</li>
+                     <li>Free Domain</li>
+                     <li>Free Hosting</li>
+                  </ul>
+                  <button type="button">Let’s Start ></button>
+               </div>
+            </div>
+            <div class="container_price">
+               <div class="price">
+                  <h5>standart</h5>
+                  <p>$ 70</p>
+                  <p>Per Month</p>
+               </div>
+               <div class="price_hover">
+                  <ul>
+                     <li>Full Branding</li>
+                     <li>Project Management</li>
+                     <li>Unlimited Revisions</li>
+                     <li>24/7 h Service</li>
+                     <li>Free Domain</li>
+                     <li>Free Hosting</li>
+                  </ul>
+                  <button type="button">Let’s Start ></button>
+               </div>
+            </div>
+            <div class="container_price">
+               <div class="price">
+                  <h5>exclusive</h5>
+                  <p>$ 80</p>
+                  <p>Per Month</p>
+               </div>
+               <div class="price_hover">
+                  <ul>
+                     <li>Full Branding</li>
+                     <li>Project Management</li>
+                     <li>Unlimited Revisions</li>
+                     <li>24/7 h Service</li>
+                     <li>Free Domain</li>
+                     <li>Free Hosting</li>
+                  </ul>
+                  <button type="button">Let’s Start ></button>
+               </div>
+            </div>
+         </div>
+      </div>
+      
+      <div class="subscribe_us">
+         <section>
+            <h2>Subscribe us</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+         </section>
+         <form>
+            <input type="text" name="address" placeholder="Email Address">
+            <input class="submit_button" type="submit" value="Submit">
+         </form>
+      </div>
+      
+      <div class="contact_us">
+         <section>
+            <h2>Contact us</h2>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+         </section>
+         <div class="contact_details">
+            <div class="email">
+               <img src="images/contact/email.png" alt="">
+               <a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+               <h4>Email</h4>
+               <p>hello@codecafe.com</p>
+               <p>Personal@codecafe.com</p>
+            </div>
+            <div class="address">
+               <img src="images/contact/address.png" alt="">
+               <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+               <h4>Our office</h4>
+               <p>240 Bhatikhana, 8200 Barisal</p>
+               <p>Bangladesh</p>
+            </div>
+            <div class="phone">
+               <img src="images/contact/phone.png" alt="">
+               <a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
+               <h4>Phone</h4>
+               <p>+00 11 66 99 66 44</p>
+               <p>11 99 66 44 065</p>
+            </div>
+         </div>
+      </div>
+      
+      <form class="contact_form">
+         <div class="user_info">
+            <input type="text" name="fname" placeholder="First name">
+            <input type="text" name="lname" placeholder="Last name">
+            <input type="text" name="subject" placeholder="Subject">
+         </div>
+         <textarea name="" id="" cols="30" rows="8"></textarea>
+         <input class="submit_button" type="submit" value="Submit now">
+      </form>
+      
+      <script type="text/javascript">jssor_1_slider_init();</script>
+      <script src="js/jquery-1.11.2.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>
