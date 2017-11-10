@@ -23,3 +23,65 @@
         }
     }
 }
+
+.work_wrapper {
+    width: 100%;
+    height: 322px;
+    margin: 0 auto;
+    display: flex;
+    .work_container {
+        position: relative;
+        overflow: hidden;
+        width: 34%;
+        &:hover .layer {
+            display: block;
+        }
+        &:hover .underlayer,
+        &:hover p {
+            display: none;
+        }
+        &:hover {
+            width: 70%;
+        }
+        p {
+            bottom: 45%;
+            color: white;
+            font-family: "Source Sans Pro";
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            left: 38%;
+            position: absolute;
+            z-index: 1;
+        }
+        img {
+            height: 322px;
+        }
+    }
+}
+.underlayer {
+    position: absolute;
+    height: 322px;
+    width: 600px;
+    left: -135px;
+}
+.notes {
+    background-size: cover;
+    background-image: url(../images/work/Untitled-12.png);
+}
+.whiskey {
+    background-image: url(../images/work/Untitled-9.png);
+}
+.books {
+    background-size: cover;
+    background-image: url(../images/work/Untitled-10.png);
+}
+.layer {
+    display: none;
+    width: 700px;
+}
+
+
+
+
+
