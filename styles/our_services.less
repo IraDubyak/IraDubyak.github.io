@@ -13,6 +13,7 @@
             float: left;
             .icon;
             li {
+                cursor: pointer;
                 margin-bottom: 15px;
                 font-size: 28px;
             }
@@ -36,10 +37,7 @@
     right: 12px;
     top: 11px;
 }
-.circular_percentage_bar {
-    margin-top: 54px;
-    float: right;
-}
+
 .graphic_design {
     width: 398px;
     overflow: hidden;
@@ -56,4 +54,44 @@
             color: @hover_icon;
         }
     }
+}
+.circular_percentage_bar {
+    float: right;
+}
+.percent_skills {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+}
+.skills_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >span {
+        color: #81868e;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+    }
+}
+#branding,
+#web_design,
+#ui_ux {
+    margin: 20px;
+    width: 125px;
+    height: 125px;
+    position: relative;
+}
+.value, 
+.percents {
+    color: #81868e;
+}
+.value {
+    font-size: 25px;
+    letter-spacing: 1.25px;
+}
+.percents {
+    font-size: 14px;
+    letter-spacing: 0.7px;
 }
