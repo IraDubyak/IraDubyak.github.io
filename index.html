@@ -7,6 +7,8 @@
       <!--[if lt IE 9]>
       <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
+      <link rel="stylesheet" href="slick/slick.css">
+      <link rel="stylesheet" href="slick/slick-theme.css">
       <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
       <link rel="stylesheet" type="text/css" href="styles/reset.css">
       <link rel="stylesheet" href="styles/bootstrap.min.css">
@@ -15,126 +17,117 @@
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
       <link rel="stylesheet" href="fonts/big_john.css">
       <link rel="stylesheet" href="computer_mouse/stylesheet.css">
-      <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png"/>
       <script src="less.min.js"></script>
    </head>
    <body>
-      <script src="js/jssor.slider-26.3.0.min.js" type="text/javascript"></script>
-      <script type="text/javascript">
-         jssor_1_slider_init = function() {
-         
-             var jssor_1_options = {
-               $AutoPlay: 1,
-               $DragOrientation: 2,
-               $PlayOrientation: 2,
-               $Align: 0,
-               $BulletNavigatorOptions: {
-                 $Class: $JssorBulletNavigator$,
-                 $Orientation: 2
-               }
-             };
-         
-             var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-         
-             /*#region responsive code begin*/
-         
-             var MAX_WIDTH = 1349;
-         
-             function ScaleSlider() {
-                 var containerElement = jssor_1_slider.$Elmt.parentNode;
-                 var containerWidth = containerElement.clientWidth;
-         
-                 if (containerWidth) {
-         
-                     var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-         
-                     jssor_1_slider.$ScaleWidth(expectedWidth);
-                 }
-                 else {
-                     window.setTimeout(ScaleSlider, 30);
-                 }
-             }
-         
-             ScaleSlider();
-         
-             $Jssor$.$AddEvent(window, "load", ScaleSlider);
-             $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-             $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-             /*#endregion responsive code end*/
-         };
-      </script>
-      
-      <div class="main_image_block">
-         <header>
+      <div class="up_button"> 
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+         </div>
+      <div id="hello" class="main_image_block">
+         <header id="navbar">
             <a class="logo" href="/">bouncy</a>
             <ul class="menu">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Portfolio</a></li>
-               <li><a href="#">Team</a></li>
-               <li><a href="#">Blog</a></li>
-               <li><a href="#">Contact</a></li>
+               <li ><a class="active"href="#hello">Hello</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#team">Team</a></li>
+               <li><a href="#blog">Blog</a></li>
+               <li><a href="#contact">Contact</a></li>
             </ul>
          </header>
-         <h1>We are code cafe</h1>
-         <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
-         <div> 
-            <i class="fa fa-angle-down" aria-hidden="true"></i> 
+         <div id="start_change" class="inner_block">
+            <h1>We are code cafe</h1>
+            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum</p>
+            <div class="down_button"> 
+              <a href="#about"> <i class="fa fa-angle-down" aria-hidden="true"></i></a> 
+            </div>
          </div>
       </div>
-      
-      <div class="about_us">
-         <div class="description">
-            <h2>This is Bouncy</h2>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
-            <button type="button">Read More</button>
+      <div id="about">
+         <div class="about_us">
+            <div class="description">
+               <h2>This is Bouncy</h2>
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. </p>
+               <button type="button">Read More</button>
+            </div>
+            <img src="images/layer-4.png" alt="ipad">
          </div>
-         <img src="images/layer-4.png" alt="ipad">
-      </div>
       
-      <div class="about_us_details">
-         <section>
-            <h2>Details about bouncy</h2>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-            <ul>
-               <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
-               <li><i class="mouse">R</i></li>
-               <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i></li>
-            </ul>
-         </section>
-         <div class="wrapper">
-            <h3>Creative Ideas</h3>
-            <div>
-               <p>At <strong>vero</strong> eos et accusamus et iusto odio dignissimos <strong>ducimus</strong> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
-               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis praesentium voluptatum deleniti atque <strong>corrupti quos</strong> dolores et quas molestias <strong>excepturi</strong> sint occaecati cupiditate non provident, <strong>simi&shy;lique</strong> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+         <div class="about_us_details">
+            <section>
+               <h2>Details about bouncy</h2>
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+               <ul>
+                  <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
+                  <li><i class="mouse">R</i></li>
+                  <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i></li>
+               </ul>
+            </section>
+            <div class="wrapper">
+               <h3>Creative Ideas</h3>
+               <div>
+                  <p>At <strong>vero</strong> eos et accusamus et iusto odio dignissimos <strong>ducimus</strong> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis praesentium voluptatum deleniti atque <strong>corrupti quos</strong> dolores et quas molestias <strong>excepturi</strong> sint occaecati cupiditate non provident, <strong>simi&shy;lique</strong> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+               </div>
+            </div>
+         </div>
+         
+         <div class="featured_work">
+            <section>
+               <h2>Featured projects</h2>
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            </section>
+            
+            <div class="work_wrapper">
+               <div class="work_container">
+                  <p>DESIGN</p>
+                  <div class="underlayer notes">
+                  </div>
+                  <img class="layer" src="images/work/layer-11.png" alt="">
+               </div>
+               <div class="work_container">
+                   <p>VINTAGE</p> 
+                   <div class="underlayer whiskey">
+                   </div>
+                   <img class="layer" src="images/work/Layer-82.jpg" alt="">
+               </div>
+               <div class="work_container">
+                   <p>BRANDING</p>
+                   <div class="underlayer books">
+                   </div>
+                   <img class="layer" src="images/work/Layer-83.jpg" alt="">
+               </div>
+           </div>
+            <div class="background_footer">
+               <p>At vero eos et <strong>accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis </p>
+               <button type="button">Submit Now</button>
             </div>
          </div>
       </div>
       
-      <div class="featured_work">
-         <section>
-            <h2>Featured projects</h2>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-         </section>
-         <!--
-            <div class="works">
-                
-            </div>
-            -->
-         <div class="background_footer">
-            <p>At vero eos et <strong>accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis </p>
-            <button type="button">Submit Now</button>
-         </div>
-      </div>
-      <div class="our_services">
-         <section>
+      <div id="services">
+         <div class="our_services">
+         <section id="scroll-to">
             <h2>Our services</h2>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
          </section>
          <div>
             <div class="circular_percentage_bar">
-               <img src="images/skills.png" alt="">
+               <div class="percent_skills">
+                   <div class="skills_bar">
+                        <div id="branding"></div>
+                        <span>Branding</span>
+                    </div>
+                    <div class="skills_bar">
+                        <div id="web_design"></div>
+                        <span>Web Design</span>
+                    </div>
+                    <div class="skills_bar">
+                        <div id="ui_ux"></div>
+                        <span>UI/UX</span>
+                    </div>
+                </div>
             </div>
             <ul>
                <li><i class="fa fa-wrench" aria-hidden="true"></i></li>
@@ -150,255 +143,247 @@
          </div>
       </div>
       
-      <div class="team_quotes">
-         <div>
-            <figure>
-               <img src="images/layer-7.png" alt="macbook">
-               <p class="logo" href="/">b<span>o</span>uncy</p>
-            </figure>
-            <section>
-               <h2>Impressed ?</h2>
-               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blandi&shy;tiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
-               <p>- Abdullah Noman</p>
-               <p>Creatice Director, <span>Code Cafe</span></p>
-            </section>
+         <div class="team_quotes">
+            <div>
+               <figure>
+                  <img src="images/layer-7.png" alt="macbook">
+                  <p class="logo" href="/">b<span>o</span>uncy</p>
+               </figure>
+               <section>
+                  <h2>Impressed ?</h2>
+                  <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blandi&shy;tiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias</p>
+                  <p>- Abdullah Noman</p>
+                  <p>Creatice Director, <span>Code Cafe</span></p>
+               </section>
+            </div>
          </div>
       </div>
       
-      <div class="portfolio">
+      <div id="portfolio" class="portfolio">
          <section>
             <h2>The portfolio</h2>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
          </section>
-         <ul class="menu">
-            <li>
-               <div>
-                  <a href="#">All Works</a>
-                  <div class="short_line"></div>
-               </div>
-            </li>
-            <li>
-               <div>
-                  <a href="#">Print</a>
-                  <div class="short_line"></div>
-               </div>
-            </li>
-            <li>
-               <div>
-                  <a href="#">Identify</a>
-                  <div class="short_line"></div>
-               </div>
-            </li>
-            <li>
-               <div>
-                  <a href="#">Branding</a>
-                  <div class="short_line"></div>
-               </div>
-            </li>
-            <li>
-               <div>
-                  <a href="#">&#160;Web&#160;</a>
-                  <div class="short_line"></div>
-               </div>
-            </li>
-            <li>
-               <div>
-                  <a href="#">HTML</a>
-                  <div class="short_line"></div>
-               </div>
-            </li>
-            <li>
-               <div>
-                  <a href="#">Wordpress</a>
-                  <div class="short_line"></div>
-               </div>
-            </li>
-         </ul>
-         <div class="gallery_flex_container">
-            <div class="image_flex_container">
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-86.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-90.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-92.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button class="shrink" type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button class="shrink" type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+      <ul class="menu" id="filters" class="clearfix">
+      <li class="tab active"  onclick="filterSelection('all')"><span>All Works</span></li>
+      <li class="tab" onclick="filterSelection('print')"><span >Print</span></li>
+      <li class="tab" onclick="filterSelection('identify')"><span >Identify</span></li>
+      <li class="tab" onclick="filterSelection('brandin')"><span >Branding</span></li>
+      <li class="tab" onclick="filterSelection('web')"><span >Web</span></li>
+      <li class="tab" onclick="filterSelection('html')"><span >HTML</span></li>
+      <li class="tab" onclick="filterSelection('wordpress')"><span >Wordpress</span></li>
+    </ul>
+
+<div class="gallery_flex_container">
+  <div class="image_flex_container">
+      <div class="filterDiv print">
+        <div class="image_wrapper">
+            <img src="images/portfolio/layer-86.png" alt="">
+            <div class="portfolio_hover">
+                <div class="text">
+                    <h2>title here</h2>
+                    <div class="horisontal_line"></div>
+                      <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                    <div>
+                      <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                      <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                    </div>
+                </div>
             </div>
-            <div class="image_flex_container">
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-87.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button class="shrink" type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button class="shrink" type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-95.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-96.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="image_flex_container">
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-91.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-89.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-94.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button class="shrink" type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button class="shrink" type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="image_flex_container">
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-88.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-93.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="image_wrapper">
-                  <img src="images/portfolio/layer-97.png" alt="">
-                  <div class="portfolio_hover">
-                     <div class="text">
-                        <h2>title here</h2>
-                        <div class="horisontal_line"></div>
-                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                        <div>
-                           <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
-                           <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+        </div>
+      </div>
+      <div class="filterDiv wordpress">
+        <div class="image_wrapper">
+                          <img src="images/portfolio/layer-90.png" alt="">
+                          <div class="portfolio_hover">
+                             <div class="text">
+                                <h2>title here</h2>
+                                <div class="horisontal_line"></div>
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                                <div>
+                                   <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                                   <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                                </div>
+                             </div>
+                          </div>
+                    </div>
+      </div>
+      <div class="filterDiv html">
+         <div class="image_wrapper">
+                      <img src="images/portfolio/layer-92.png" alt="">
+                      <div class="portfolio_hover">
+                         <div class="text">
+                            <h2>title here</h2>
+                            <div class="horisontal_line"></div>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div>
+                               <button class="shrink" type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                               <button class="shrink" type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+      </div>
+  </div>
+  <div class="image_flex_container">
+      <div class="filterDiv print">
+        <div class="image_wrapper">
+                      <img src="images/portfolio/layer-87.png" alt="">
+                      <div class="portfolio_hover">
+                         <div class="text">
+                            <h2>title here</h2>
+                            <div class="horisontal_line"></div>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div>
+                               <button class="shrink" type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                               <button class="shrink" type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            </div>
+                         </div>
+                      </div>
+        </div>
+      </div>
+      <div class="filterDiv brandin html">
+        <div class="image_wrapper">
+                      <img src="images/portfolio/layer-95.png" alt="">
+                      <div class="portfolio_hover">
+                         <div class="text">
+                            <h2>title here</h2>
+                            <div class="horisontal_line"></div>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div>
+                               <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                               <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+      </div>
+      <div class="filterDiv identify">
+         <div class="image_wrapper">
+                      <img src="images/portfolio/layer-96.png" alt="">
+                      <div class="portfolio_hover">
+                         <div class="text">
+                            <h2>title here</h2>
+                            <div class="horisontal_line"></div>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div>
+                               <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                               <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+      </div>
+  </div>
+  <div class="image_flex_container">
+      <div class="filterDiv identify">
+        <div class="image_wrapper">
+                      <img src="images/portfolio/layer-91.png" alt="">
+                      <div class="portfolio_hover">
+                         <div class="text">
+                            <h2>title here</h2>
+                            <div class="horisontal_line"></div>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div>
+                               <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                               <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            </div>
+                         </div>
+                      </div>
+        </div>
+      </div>
+      <div class="filterDiv web">
+        <div class="image_wrapper">
+                      <img src="images/portfolio/layer-89.png" alt="">
+                      <div class="portfolio_hover">
+                         <div class="text">
+                            <h2>title here</h2>
+                            <div class="horisontal_line"></div>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div>
+                               <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                               <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+      </div>
+      <div class="filterDiv html">
+        <div class="image_wrapper">
+                      <img src="images/portfolio/layer-94.png" alt="">
+                      <div class="portfolio_hover">
+                         <div class="text">
+                            <h2>title here</h2>
+                            <div class="horisontal_line"></div>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div>
+                               <button class="shrink" type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                               <button class="shrink" type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+      </div>
+  </div>
+  <div class="image_flex_container">
+      <div class="filterDiv web wordpress">
+        <div class="image_wrapper">
+                      <img src="images/portfolio/layer-88.png" alt="">
+                      <div class="portfolio_hover">
+                         <div class="text">
+                            <h2>title here</h2>
+                            <div class="horisontal_line"></div>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div>
+                               <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                               <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            </div>
+                         </div>
+                      </div>
+        </div>
+      </div>
+      <div class="filterDiv brandin">
+        <div class="image_wrapper">
+                      <img src="images/portfolio/layer-93.png" alt="">
+                      <div class="portfolio_hover">
+                         <div class="text">
+                            <h2>title here</h2>
+                            <div class="horisontal_line"></div>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div>
+                               <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                               <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+      </div>
+      <div class="filterDiv identify">
+        <div class="image_wrapper">
+                      <img src="images/portfolio/layer-97.png" alt="">
+                      <div class="portfolio_hover">
+                         <div class="text">
+                            <h2>title here</h2>
+                            <div class="horisontal_line"></div>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+                            <div>
+                               <button type="button"><i class="fa fa-link" aria-hidden="true"></i></button>
+                               <button type="button"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+      </div>
+  </div>
+</div>
          <footer>
             <p>At vero eos et <span>accusamus</span> et iusto odio <span>dignissimos</span> ducimus qui blanditiis </p>
             <button type="button">Start Project</button>
          </footer>
       </div>
       
-      <div class="team">
+      <div id="team">
+          <div  class="team">
          <section>
             <h2>The team</h2>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
@@ -412,7 +397,16 @@
             <div class="carousel-inner">
                 <div class="item active">
                   <div class="context">
-                     <img src="images/man.png" alt="">
+                    <div class="team_wrapper">
+                         <img src="images/man.png" alt="">
+                         <div class="team_hover">
+                             <div class="social">
+                                  <button type="button"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                                   <button type="button"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                                   <button type="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                             </div>
+                        </div>
+                      </div>
                      <aside>
                         <div class="vertical_line"></div>
                         <div class="person">
@@ -448,7 +442,16 @@
                </div>
                <div class="item">
                   <div class="context">
-                     <img src="images/man.png" alt="">
+                     <div class="team_wrapper">
+                         <img src="images/man.png" alt="">
+                         <div class="team_hover">
+                             <div class="social">
+                                  <button type="button"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                                   <button type="button"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                                   <button type="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                             </div>
+                        </div>
+                      </div>
                      <aside>
                         <div class="vertical_line"></div>
                         <div class="person">
@@ -484,7 +487,16 @@
                </div>
                <div class="item">
                   <div class="context">
-                     <img src="images/man.png" alt="">
+                     <div class="team_wrapper">
+                         <img src="images/man.png" alt="">
+                         <div class="team_hover">
+                             <div class="social">
+                                  <button type="button"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                                   <button type="button"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                                   <button type="button"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                             </div>
+                        </div>
+                      </div>
                      <aside>
                         <div class="vertical_line"></div>
                         <div class="person">
@@ -575,52 +587,46 @@
             </div>
          </div>
       </div>
-      
-      <!-- <div class="blog">
-         <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:1349px;height:691px;overflow:hidden;visibility:hidden;">
-         
-            <div class="slider" data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:1349px;height:691px;overflow:hidden;">
-                <div class="bg">
-                  <div class="title">
-                       <h2>Latest news</h2>
-                       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                   </div>
-                   <h3>The trending Landing Pages</h3>
-                   <p>by <span>Kabir Uddin</span></p>
-                   <p>6950 Likes - 243 Comments - 703 shares</p>
-                   <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  </p>
-                   <button>+ Read More</button>
-                </div>
-                <div class="bg">
-                    <div class="title">
-                       <h2>Latest videos</h2>
-                       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                   </div>
-                   <link rel="apple-touch-icon" sizes="120x120" href="images/apple-touch-icon-120x120.png"/>
-                   <button>+ Read More</button>
-                </div>
-                <div  class="bg">
-                    <div class="title">
-                       <h2>Visit our blog</h2>
-                       <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-                    </div>
-                    <p>by <span>Kabir Uddin</span></p>
-                    <p>6950 Likes - 243 Comments - 703 shares</p>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  </p>
-                    <button>+ Read More</button>
-                    
-                </div>
+      </div>
+     
+      <div id="blog">
+         <div class="blog">
+         <div class="bg">
+            <div class="title">
+               <h2>Latest news</h2>
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
             </div>
-            
-            <div data-u="navigator" class="jssorb031" style="position:absolute;bottom:12px;right:12px;" data-autocenter="2" data-scale="0.5" data-scale-right="0.75">
-                <div data-u="prototype" class="i" style="width:12px;height:12px;">
-                    <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
-                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
-                    </svg>
-                </div>
+            <div class="blog_description">
+               <h3>The trending Landing Pages</h3>
+               <p>by <span>Kabir Uddin</span></p>
+               <p>6950 Likes - 243 Comments - 703 shares</p>
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae&shy;sentium voluptatum deleniti atque corrupti quos dolores et quas molestias ex&shy;cepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  </p>
+               <button>+ Read More</button>
             </div>
          </div>
-         </div> -->
+         <div class="bg">
+            <div class="title video">
+               <h2>Latest videos</h2>
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            </div>
+            <button>
+               <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+            </button>
+         </div>
+         <div class="bg">
+            <div class="title">
+               <h2>Visit our blog</h2>
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
+            </div>
+            <div class="blog_description">
+               <h3>The trending Landing Pages</h3>
+               <p>by <span>Kabir Uddin</span></p>
+               <p>6950 Likes - 243 Comments - 703 shares</p>
+               <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis prae&shy;sentium voluptatum deleniti atque corrupti quos dolores et quas molestias ex&shy;cepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio...  </p>
+               <button>+ Read More</button>
+            </div>
+         </div>
+      </div>
          
       <div class="our_price">
          <section>
@@ -635,15 +641,18 @@
                   <p>Per Month</p>
                </div>
                <div class="price_hover">
-                  <ul>
-                     <li>Full Branding</li>
-                     <li>Project Management</li>
-                     <li>Unlimited Revisions</li>
-                     <li>24/7 h Service</li>
-                     <li>Free Domain</li>
-                     <li>Free Hosting</li>
-                  </ul>
-                  <button type="button">Let’s Start ></button>
+                 <div>
+                     <p>Full Branding</p>
+                     <p>Project Management</p>
+                     <p>Unlimited Revisions</p>
+                     <p>24/7 h Service</p>
+                     <p>Free Domain</p>
+                     <p>Free Hosting</p>
+                 </div>
+                  <button type="button">
+                  <p>Let’s Start</p>
+                  <p><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                  </button>
                </div>
             </div>
             <div class="container_price">
@@ -653,15 +662,18 @@
                   <p>Per Month</p>
                </div>
                <div class="price_hover">
-                  <ul>
-                     <li>Full Branding</li>
-                     <li>Project Management</li>
-                     <li>Unlimited Revisions</li>
-                     <li>24/7 h Service</li>
-                     <li>Free Domain</li>
-                     <li>Free Hosting</li>
-                  </ul>
-                  <button type="button">Let’s Start ></button>
+                 <div>
+                     <p>Full Branding</p>
+                     <p>Project Management</p>
+                     <p>Unlimited Revisions</p>
+                     <p>24/7 h Service</p>
+                     <p>Free Domain</p>
+                     <p>Free Hosting</p>
+                 </div>
+                  <button type="button">
+                  <p>Let’s Start</p>
+                  <p><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                  </button>
                </div>
             </div>
             <div class="container_price">
@@ -671,15 +683,18 @@
                   <p>Per Month</p>
                </div>
                <div class="price_hover">
-                  <ul>
-                     <li>Full Branding</li>
-                     <li>Project Management</li>
-                     <li>Unlimited Revisions</li>
-                     <li>24/7 h Service</li>
-                     <li>Free Domain</li>
-                     <li>Free Hosting</li>
-                  </ul>
-                  <button type="button">Let’s Start ></button>
+                 <div>
+                     <p>Full Branding</p>
+                     <p>Project Management</p>
+                     <p>Unlimited Revisions</p>
+                     <p>24/7 h Service</p>
+                     <p>Free Domain</p>
+                     <p>Free Hosting</p>
+                 </div>
+                  <button type="button">
+                  <p>Let’s Start</p>
+                  <p><i class="fa fa-angle-right" aria-hidden="true"></i></p>
+                  </button>
                </div>
             </div>
          </div>
@@ -695,8 +710,10 @@
             <input class="submit_button" type="submit" value="Submit">
          </form>
       </div>
+      </div>
       
-      <div class="contact_us">
+      <div id="contact">
+         <div class="contact_us">
          <section>
             <h2>Contact us</h2>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
@@ -735,9 +752,43 @@
          <textarea name="" id="" cols="30" rows="8"></textarea>
          <input class="submit_button" type="submit" value="Submit now">
       </form>
-      
-      <script type="text/javascript">jssor_1_slider_init();</script>
+      <div id="map"></div> 
+      <footer>
+         <div class="footer_content">
+             <a href="#">Bouncy</a>
+             <p>Copyright 2015. All rights Reserved</p>
+             <ul class="socials">
+                 <li type="button" class="facebook">
+                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                 </li>
+                 <li type="button" class="twitter">
+                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                 </li>
+                 <li type="button" class="linkedin">
+                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                 </li>
+                 <li type="button" class="instagram">
+                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                 </li>
+                 <li type="button" class="vimeo">
+                     <a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                 </li>
+             </ul>
+         </div>
+      </footer> 
+      </div>
+      <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
       <script src="js/jquery-1.11.2.min.js"></script>
+      <script src="js/filter_image.js"></script>
+      <script src="js/map.js"></script>
+      <script src="js/change_navbar.js"></script>
+      <script src="js/change_active_menu.js"></script>
       <script src="js/bootstrap.min.js"></script>
+       <script src="js/progressbar.js"></script>
+     <script src="js/percentage.js"></script>
+     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdUavLhqgUv-oBYBtCPXojKlG5rky138&callback=initMap"
+  type="text/javascript"></script>
+      <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+      <script src="js/slick_slider.js"></script>
    </body>
 </html>
