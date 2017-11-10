@@ -32,6 +32,7 @@
         background-color: @pcolor;
         height: 55px;
         position: relative;
+        transition: 0.3s;
         width: 55px;
         i {
             color: @h1color;
@@ -39,7 +40,53 @@
         }
         &:hover {
             background-color: @hover_icon;
-            transition: 0.2s;
+            transition: 0.3s;
         }
+    }
+}
+
+.social_button {
+    border-radius: 50%;
+    border: none;
+    height: 30px;
+    position: relative;
+    width: 30px;
+    &:not(:last-of-type) {
+        margin-right: 9px;
+    }
+}
+.fa-instagram, 
+.fa-facebook,
+.fa-twitter,
+.fa-linkedin,
+.fa-vimeo {
+    font-size: 19px;
+    margin: 7px;
+    position: absolute;
+}
+.fa-facebook {
+    top: -1px;
+    right: 2px;
+}
+.fa-linkedin {
+    top: -2px;
+    right: 0px;
+}
+.fa-twitter,
+.fa-instagram,
+.fa-vimeo {
+    top: -1px;
+    right: 0;
+}
+
+.trigger_button {
+    background-color: @hover_icon;
+    border: none;
+    .border_radius;
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    &:hover {
+        opacity: 0.8;
     }
 }
