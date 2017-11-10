@@ -79,3 +79,51 @@
 .user_interface {
     width: 75%;
 }
+
+.team_wrapper {
+    position: relative;
+    display: inline-block;
+    transition: 0.2ms;
+}
+.team_wrapper .team_hover {
+    display: none;
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    background-color: rgba(255,255,255,0.75);
+    height: 96%;
+    width: 95%;
+    transition: 0.2ms;
+}
+.team_wrapper:hover .team_hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social {
+     button {
+         .social_button;
+         background-color: rgba(0, 0, 0, 0.4);
+         &:first-of-type:hover {
+             background-color: #3f729b;
+         }
+         &:nth-of-type(2):hover {
+             background-color: #3b5998;
+         }
+         &:last-of-type:hover {
+             background-color: #26a6d1;
+         }
+    }
+    .fa-instagram, 
+    .fa-facebook,
+    .fa-twitter {
+        color: rgba(255,255,255,0.75);
+    }
+}
+
+
+ 
+   
+
+   
+  
