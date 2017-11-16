@@ -2,10 +2,14 @@ filterSelection("all")
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
+  if (c == "all") {
+    c = "";
+  } 
   for (i = 0; i < x.length; i++) {
     removeClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) addClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) {
+      addClass(x[i], "show");
+    } 
   }
 }
 
@@ -30,6 +34,21 @@ function removeClass(element, name) {
   element.className = arr1.join(" ");
 }
 
+
+
+
+
+
+
 $(".tab").click(function (e) {
 $(this).addClass("active").siblings().removeClass("active");
 });
+
+$(".menu li:not(:first-child)").click(function (e) {
+$(".filterDiv").addClass("change_height");
+});
+
+$(".menu li:first-child").click(function (e) {
+$(".filterDiv").removeClass("change_height");
+});
+
