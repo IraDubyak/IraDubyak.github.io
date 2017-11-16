@@ -60,7 +60,7 @@ $(window).scroll(function() {
        hH = $('#scroll-to').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
-    console.log((hT-wH) , wS);
+    // console.log((hT-wH) , wS);
    if (wS > (hT+hH-wH)){
        brandingBar.animate(-0.8);
        webDesignBar.animate(-0.75); 
