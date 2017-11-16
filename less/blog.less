@@ -1,0 +1,114 @@
+
+.bg {
+position: relative;
+    >button {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        z-index: 1;
+        bottom: 43%;
+        right: 47%;
+        border: 0;
+        background: transparent;
+        opacity: 0.15;
+        i {
+            position: absolute;
+            z-index: 2;
+            bottom: 0;
+            right: 10%;
+            color: white;
+            font-size: 120px;
+        }
+    }
+}
+.slick-dotted.slick-slider  {
+    margin: 0;
+    padding: 0;
+}
+.my-dots {
+    position: absolute;
+    bottom: 46%;
+    right: 98px;
+    list-style: none;
+    width: 0;
+    li {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        margin: 10px 0;
+        cursor: pointer;
+        button {
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            padding: 5px;
+            cursor: pointer;
+            background: transparent;
+            border-radius: 50%;
+            border: 1px solid #b2b3b3;
+        }
+    }
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus,
+.my-dots li.slick-active button {
+    opacity: 1;
+    background-color: #b2b3b3;
+}
+.blog {
+    background-image: url(../images/blog-bg.png);
+}
+.title {
+    margin: 80px 0 0 98px;
+    width: 460px;
+    h2 {
+        color: white;
+        text-transform: uppercase;
+    }
+    p {
+        margin-top: 38px;
+        color: #b2b3b3;
+    }
+}
+.blog_description {
+    margin: 90px 0 0 170px;
+    width: 582px;
+    h3 {
+        color: #e1e4e9;
+    }
+    p:first-of-type {
+        letter-spacing: 1.4px;
+        font-style: italic;
+        margin-top: 5px;
+        text-transform: uppercase;
+        font-weight: 300;
+        span {
+            color: @hover_icon;
+        }
+    }
+    p:nth-of-type(2) {
+        color: #464646;
+        letter-spacing: 1.4px;
+        font-weight: 300;
+        margin-top: 10px;
+    }
+    p:last-of-type {
+        margin-top: 50px;
+    }
+    button {
+        background: transparent;
+        border: 0;
+        color: #b2b3b3;
+        font-size: 16px;
+        margin-bottom: 90px;
+        margin-top: 45px;
+        padding: 0;
+    }
+}
+.video {
+    margin-bottom: 514px;
+}
+.slick-slide {
+    transition: all 1s linear;
+}

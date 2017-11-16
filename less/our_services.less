@@ -1,0 +1,103 @@
+.our_services {
+    background-color: @bgcolor;
+    section {
+    .each_block_header;
+    }
+    & > div {
+        .clearfix;
+        margin: 0 auto;
+        padding-bottom: 120px;
+        width: 1030px;
+        ul {
+            float: left;
+            margin-right: 43px;
+            .icon;
+            li {
+                cursor: pointer;
+                margin-bottom: 15px;
+                font-size: 28px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        
+    }
+}
+.leftside_bar {
+    float: left;
+    overflow: hidden;
+}
+.fa-wrench {
+    right: 13px;
+    top: 12px;
+}
+.fa-paint-brush {
+    right: 13px;
+    top: 11px;
+}
+.fa-gamepad {
+    right: 13px;
+    top: 11px;
+}
+.fa-plug {
+    right: 12px;
+    top: 11px;
+}
+
+.graphic_design {
+    width: 398px;
+    overflow: hidden;
+    p:first-of-type {
+        .bigger_paragraph;
+        margin-top: 30px;
+        strong:first-of-type {
+            color: @hover_icon;
+        }
+    }
+    p:last-of-type {
+        margin-top: 25px;
+        strong {
+            color: @hover_icon;
+        }
+    }
+}
+.circular_percentage_bar {
+    float: right;
+}
+.percent_skills {
+    display: flex;
+    justify-content: space-between;
+}
+.skills_bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >span {
+        color: #81868e;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.8px;
+    }
+}
+#branding,
+#web_design,
+#ui_ux {
+    margin: 50px 15px 0;
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+.value, 
+.percents {
+    color: #81868e;
+}
+.value {
+    font-size: 25px;
+    letter-spacing: 1.25px;
+}
+.percents {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+}

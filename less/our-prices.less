@@ -1,0 +1,73 @@
+.our_price {
+    background-color: @bgcolor;
+    section {
+        .each_block_header;
+    }
+}
+.plans {
+    .clearfix;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    width: 834px;
+    .price {
+        background-color: @h1color;
+        float: left;
+        box-shadow: 1px 1px #e7e7e7;
+        text-align: center;
+        p:first-of-type {
+            color: #1fbba6;
+            font-size: 42px;
+            font-weight: 700;
+            margin-top: 65px;
+        }
+        p:last-of-type {
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 1px;
+            margin: 10px 63px 108px;
+        }
+    }
+}
+.container_price {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin-right: 65px;
+    &:last-of-type {
+        margin-right: 0; 
+    }
+}
+
+.price_hover {
+    bottom: -300px;
+    position: absolute;
+    overflow: hidden;
+    background-color: white;
+    height: 100%;
+    transition: all 500ms ease-out;
+    div {
+        margin: 35px 0 0 35px;
+        p {
+            line-height: 30px;
+        }
+    }
+    button {
+        .clearfix;
+        padding: 20px 65px;
+        margin-top: 25px;
+        background-color: @hover_icon;
+        width: 234px;
+        p {
+            float: left;
+            color: white;
+            font-size: 16px;  
+            &:first-of-type {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.container_price:hover .price_hover {
+    bottom: 0;
+}

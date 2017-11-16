@@ -1,0 +1,54 @@
+.team_quotes {
+    background-image: url(../images/team-quotes-black-and-white.png);
+    background-position: center;
+    background-size: cover;
+    .clearfix;
+    div {
+        .clearfix;
+        margin:  0 auto;
+        width: 1170px;
+        padding-top: 80px;
+        padding-bottom: 98px;
+        position: relative;
+        p {
+            color: #b2b3b3;
+            text-transform: uppercase;
+            span {
+                color: @hover_icon;
+            }
+        }
+        section {
+            float: left;
+            width: 596px;
+            h2 {
+                color: #f3f3f3;
+                margin-bottom: 45px;
+                }
+            p:first-of-type {
+                .bigger_paragraph;
+                margin-bottom: 25px;
+                text-transform: none;
+            }
+            p:nth-child(3) {
+                font-weight: 700;
+            }
+        }
+        figure {
+            img {
+                float: right;
+                position: absolute;
+                right: 0;
+                top: -35px; 
+            }
+            p {
+                color: @h1color;
+                font-family: 'BigJohn';
+                font-size: 30px;
+                position: absolute;
+                right: 135px;
+                text-transform: uppercase;
+                top: 70px; 
+            }
+        }
+    }
+}
