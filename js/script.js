@@ -1,3 +1,4 @@
+//highlight background of navbar
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
@@ -30,37 +31,7 @@ $(document).ready(function () {
         });
     });
 
-  $('.up_button').hide();
-  $(window).scroll(function() {
-    if($(this).scrollTop() > 20) {
-      $('.up_button').fadeIn();
-    } else {
-      $('.up_button').fadeOut();
-    }
-  });
-
-  $('.up_button').click(function() {
-    $('body, html').animate({scrollTop: 0}, 800);
-  });
-
-  $('.down_button').click(function() {
-    $('body, html').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
-  });
-
-  $('.blog').slick({
-    dots: true,
-    dotsClass: "my-dots",
-    arrows : false,
-    vertical: true,
-    autoplay:true,
-    autoplaySpeed: 5000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    verticalSwiping: true,
-  });
-});
-
-function onScroll(event){
+    function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('.menu li a').each(function () {
         var currLink = $(this);
@@ -74,6 +45,44 @@ function onScroll(event){
         }
     });
 }
+
+//down and up buttons
+  $('.up_button').hide();
+  $(window).scroll(function() {
+    if($(this).scrollTop() > 20) {
+      $('.up_button').fadeIn();
+    } else {
+      $('.up_button').fadeOut();
+    }
+  });
+
+  $('.up_button').click(function() {
+    $('body, html').animate({scrollTop: 0}, 800);
+  });
+
+
+
+  $('.down_button').click(function() {
+    $('body, html').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+  });
+
+
+//slick slider
+  $('.blog').slick({
+    dots: true,
+    dotsClass: "my-dots",
+    arrows : false,
+    vertical: true,
+    autoplay:true,
+    autoplaySpeed: 5000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    verticalSwiping: true,
+  });
+});
+
+
+//responsive navbar
 function myFunction() {
     var x = document.getElementById("navbar");
     if ((x.className === "navbar_menu")||(x.className === "navbar_menu scrolling")) {
@@ -83,6 +92,8 @@ function myFunction() {
         x.className = "navbar_menu scrolling";
     }
 }
+
+//filter image
 filterSelection("all")
 function filterSelection(c) {
   var x, i;
@@ -119,6 +130,8 @@ function removeClass(element, name) {
   element.className = arr1.join(" ");
 }
 
+
+//tabs on portfolio
 $(".tab").click(function (e) {
     $(this).addClass("active").siblings().removeClass("active");
 });
@@ -130,6 +143,9 @@ $(".menu li:not(:first-child)").click(function (e) {
 $(".menu li:first-child").click(function (e) {
     $(".filterDiv").removeClass("change_height");
 });
+
+
+//map
 function initMap() {
 
     var uluru = {lat: 51.522556, lng: 0.031546};
@@ -323,6 +339,9 @@ function initMap() {
           icon: imageMarker
         });
     }
+
+
+//percentage 
         var brandingBar = new ProgressBar.Circle(branding, {
           strokeWidth: 4,
           trailWidth: 2,
@@ -377,7 +396,8 @@ function initMap() {
             }
           }
         });
-        
+  
+     
 $(window).scroll(function() {
    var hT = $('#scroll-to').offset().top,
        hH = $('#scroll-to').outerHeight(),
