@@ -34,12 +34,6 @@ function removeClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-
-
-
-
-
-
 $(".tab").click(function (e) {
 $(this).addClass("active").siblings().removeClass("active");
 });
