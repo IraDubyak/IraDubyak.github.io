@@ -44,12 +44,12 @@
         & > div {
             padding-bottom: 90px;
             width: 900px;
-            ul {
+            .vertical_tabs {
                 margin-right: 30px;
             }
         }
     }
-    .graphic_design {
+    .tabVerticalContent {
         width: 340px;
     }
 
@@ -69,7 +69,7 @@
     }
      .about_us_details {
         padding-bottom: 60px;
-        div.wrapper {
+        .tabcontent {
             width: 740px;
             p:first-of-type {
                 width: 265px;
@@ -123,15 +123,15 @@
         & > div {
             padding-bottom: 90px;
             width: 95%;
-            ul {
+            .vertical_tabs {
                 margin-right: 30px;
-                li {
+                button {
                     margin-bottom: 21px;
                 }
             }
         }
     }
-    .graphic_design {
+    .tabVerticalContent {
         width: 278px;
         p:first-of-type {
             margin-top: 20px;
@@ -239,7 +239,7 @@
             }
         }
     }
-    .graphic_design {
+    .tabVerticalContent {
         width: 210px;
     }
     #branding,
@@ -322,7 +322,7 @@
             margin-top: 35px;
             margin-bottom: 35px;
         }
-        div.wrapper {
+        .tabcontent {
             margin-top: 50px;
             width: 100%;
             div {
@@ -438,14 +438,14 @@
             margin-top: 35px;
             margin-bottom: 40px;
         }
-        & > div ul {
+        & > div .vertical_tabs {
             margin-right: 30px;
-            li {
+            button {
                 margin-bottom: 15px;
             }
         }
     }
-    .graphic_design {
+    .tabVerticalContent {
         width: 75%;
         p:first-of-type {
             margin-top: 30px;
@@ -675,24 +675,30 @@
         }
         & > div {
             padding-bottom: 70px;
-            ul {
+            .vertical_tabs {
                 float: none;
                 margin-right: 30px;
                 width: 295px;
                 margin: 0 auto;
-                li {
+                button {
                     float: left;
                     margin-bottom: 40px;
                     overflow: hidden;
-                    &:not(:last-child) {
+                    &:not(:last-of-type) {
                         margin-right: 25px;
                     }
                 }
             }
         }
     }
-    .graphic_design {
+    .leftside_bar {
         width: 100%;
+    }
+    .tabVerticalContent {
+        width: 100%;
+        p {
+            width: 90%;
+        }
     }
     .circular_percentage_bar {
         width: 100%;
@@ -799,6 +805,12 @@
             right: 10%;
         }
     }
+    .our_services .tabVerticalContent {
+        width: 100%;
+        p {
+            width: 90%;
+        }
+    }
 }
 @media only screen and (max-width: 400px) {
     .team_quotes div {
@@ -820,7 +832,7 @@
             right: 4%;
         }
         section {
-            width: 310px;
+            width: 300px;
         }
     }
 }
