@@ -17,6 +17,7 @@
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
       <link rel="stylesheet" href="fonts/big_john.css">
       <link rel="stylesheet" href="fonts/computer_mouse/stylesheet.css">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       <script src="less.min.js"></script>
    </head>
    <body>
@@ -27,7 +28,7 @@
          <header class="navbar_menu" id="navbar">
             <a class="logo" href="/">bouncy</a>
             <ul class="menu">
-               <li><a class="active"href="#hello">Hello</a></li>
+               <li><a class="active" href="#hello">Hello</a></li>
                <li><a href="#about">About</a></li>
                <li><a href="#services">Services</a></li>
                <li><a href="#portfolio">Portfolio</a></li>
@@ -59,17 +60,31 @@
             <section>
                <h2>Details about bouncy</h2>
                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
-               <ul>
-                  <li><i class="fa fa-heart-o" aria-hidden="true"></i></li>
-                  <li><i class="mouse">R</i></li>
-                  <li><i class="fa fa-lightbulb-o" aria-hidden="true"></i></li>
-               </ul>
+               <div class="tabs">
+                  <button id="activeTab" class="tablinks active" onclick="openDetail(event, 'heart')"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
+                  <button class="tablinks" onclick="openDetail(event, 'mouse')"><i class="mouse">R</i></button>
+                  <button class="tablinks" onclick="openDetail(event, 'lamp')"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
+               </div>
             </section>
-            <div class="wrapper">
-               <h3>Creative Ideas</h3>
+            <div id="heart" class="tabcontent">
+               <h3>Creative Ideas </h3>
                <div>
                   <p>At <strong>vero</strong> eos et accusamus et iusto odio dignissimos <strong>ducimus</strong> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
                   <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis praesentium voluptatum deleniti atque <strong>corrupti quos</strong> dolores et quas molestias <strong>excepturi</strong> sint occaecati cupiditate non provident, <strong>simi&shy;lique</strong> sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem r</p>
+               </div>
+            </div>
+            <div id="mouse" class="tabcontent">
+               <h3>Creative Ideas Two</h3>
+               <div>
+                  <p>At <strong>vero</strong> eos et accusamus et iusto odio dignissimos <strong>retyhuf</strong> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+                  <p>At vwerdero eos et accusamus et iusto odio dignissimos ducimus qui blan&shy;ditiis dignissimos voluptatum deleniti atque <strong>corrupti aswe</strong> dolores et quas molestias <strong>excepturi</strong> swhy occaecati cupiditate yiu provident, <strong>simi&shy;lique</strong> gtss in culpa qui officia deserunt mollitia rerrt, id gfd laborum re dolorum fuga. Et harum quidem r</p>
+               </div>
+            </div>
+            <div id="lamp" class="tabcontent">
+               <h3>Creative Ideas Three</h3>
+               <div>
+                  <p>At <strong>vero</strong> eos et accusamus et iusto odio dignissimos <strong>sarewus</strong> qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores </p>
+                  <p>Qs gtcb qbh et accusamus et iusto odio dignissimos ducimus erw blan&shy;ditiis praesentium voluptatum deleniti itfbu <strong>corrupti drji</strong> dolores ed quas molestias <strong>excepturi</strong> sint occaecati cupiditate non provident, <strong>simi&shy;lique</strong> sunt in culpa qui officia deserunt mollitia animi, id qes laborum et dolorum ojuy. Et urgs quidem r</p>
                </div>
             </div>
          </div>
@@ -80,7 +95,8 @@
                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</p>
             </section>
             
-            <div class="work_wrapper">
+            <div class="background_wrapper">
+              <div class="work_wrapper">
                <div class="work_container">
                   <p>DESIGN</p>
                   <div class="underlayer notes">
@@ -100,10 +116,18 @@
                    <img class="layer" src="images/work/Layer-83.jpg" alt="">
                </div>
            </div>
+            </div>
+            
             <div class="background_footer">
               <div class="wrapper">
                 <p>At vero eos et <strong>accusamus</strong> et iusto odio dignissimos ducimus qui blanditiis </p>
-               <button type="button">Submit Now</button>
+               <button id="buttonFeaturedSubmit" type="button">Submit Now</button>
+               <div id="submitFeaturedModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Thank You!!!</p>
+                  </div>
+               </div>
               </div>
             </div>
          </div>
@@ -133,16 +157,31 @@
                 </div>
             </div>
             <div class="leftside_bar">
-              <ul>
-               <li><i class="fa fa-wrench" aria-hidden="true"></i></li>
-               <li><i class="fa fa-paint-brush" aria-hidden="true"></i></li>
-               <li><i class="fa fa-gamepad" aria-hidden="true"></i></li>
-               <li><i class="fa fa-plug" aria-hidden="true"></i></li>
-              </ul>
-              <div class="graphic_design">
+              <div class="vertical_tabs">
+               <button id="activeVerticalTab" class="tabVerticalLinks active" onclick="openVerticalDetail(event, 'wrench')"><i class="fa fa-wrench" aria-hidden="true"></i></button>
+               <button class="tabVerticalLinks" onclick="openVerticalDetail(event, 'brush')"><i class="fa fa-paint-brush" aria-hidden="true"></i></button>
+               <button class="tabVerticalLinks" onclick="openVerticalDetail(event, 'gamepad')"><i class="fa fa-gamepad" aria-hidden="true"></i></button>
+               <button class="tabVerticalLinks" onclick="openVerticalDetail(event, 'plug')"><i class="fa fa-plug" aria-hidden="true"></i></button>
+              </div>
+              <div class="tabVerticalContent" id="wrench">
                <h3>Graphic Design</h3>
                <p>At vero eos et accusamus et <strong>iusto</strong> odio dignissi&shy;mos <strong>ducimus</strong> qui blanditiis praesentium volup&shy;tatum deleniti</p>
                <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <strong>similique sunt</strong> in culpa qui officia deserunt mollitia animi, id est laborum et do&shy;lorum fuga. </p>
+              </div>
+              <div class="tabVerticalContent" id="brush">
+               <h3>Graphic Design 2</h3>
+               <p>Ar dkos rug et accusamus fr <strong>wedfy</strong> vfty dignissi&shy;mos <strong>satyhvd</strong> qui blanditiis praesentium volup&shy;tatum deleniti</p>
+               <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <strong>similique sweg</strong> uh culpa rew officia deserunt mollitia animi, we est laborum ct do&shy;lorum yted. </p>
+              </div>
+              <div class="tabVerticalContent" id="gamepad">
+               <h3>Graphic Design 3</h3>
+               <p>Dr vero wbh et accusamus rw <strong>fyjip</strong> ertj dignissi&shy;utr <strong>evhyuop</strong> drt blanditiis praesentium volup&shy;tatum deleniti</p>
+               <p>quos dolores et quas molestias excepturi sint occaecati cupiditate rew provident, <strong>similique qwcf</strong> in culpa qui officia deserunt mollitia animi, id gyj laborum se do&shy;lorum redw. </p>
+              </div>
+              <div class="tabVerticalContent" id="plug">
+               <h3>Graphic Design 4</h3>
+               <p>Zs frsb juft we accusamus re <strong>qrtcgh</strong> tfdj dignissi&shy;mos <strong>qvfghier</strong> ryi blanditiis praesentium volup&shy;tatum deleniti</p>
+               <p>quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, <strong>dfghthn sunt</strong> yu culpa fde officia deserunt mollitia animi, id sd est laborum ddfs do&shy;lorum fuga. </p>
               </div>
             </div>
             
@@ -725,7 +764,13 @@
          </section>
          <form>
             <input type="text" name="address" placeholder="Email Address">
-            <input class="submit_button" type="submit" value="Submit">
+            <input id="buttonSubmitModal" class="submit_button" type="submit" value="Submit">
+            <div id="submiSubscribeModal" class="modal">
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Thank You!!!</p>
+                  </div>
+            </div>
          </form>
       </div>
       </div>
@@ -768,7 +813,13 @@
             <input type="text" name="subject" placeholder="Subject">
          </div>
          <textarea name="" id="" cols="30" rows="8"></textarea>
-         <input class="submit_button" type="submit" value="Submit now">
+         <input id="buttonSubmit" class="submit_button" type="submit" value="Submit now">
+         <div id="submitModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Thank You!!!</p>
+          </div>
+        </div>
       </form>
       <div class="map_wrapper">
         <div id="map"></div> 
@@ -779,37 +830,37 @@
              <p>Copyright 2015. All rights Reserved</p>
              <ul class="socials">
                  <li type="button" class="facebook">
-                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                     <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                  </li>
                  <li type="button" class="twitter">
-                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                     <a href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                  </li>
                  <li type="button" class="linkedin">
-                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                     <a href="https://www.linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                  </li>
                  <li type="button" class="instagram">
-                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                     <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                  </li>
                  <li type="button" class="vimeo">
-                     <a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
+                     <a href="https://vimeo.com/"><i class="fa fa-vimeo" aria-hidden="true"></i></a>
                  </li>
              </ul>
          </div>
       </footer> 
       </div>
-      <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
       <script src="js/jquery-3.2.1.min.js"></script>
-      <!-- <script src="js/filter_image.js"></script>
-      <script src="js/map.js"></script>
-      <script src="js/change_navbar.js"></script>
-      <script src="js/change_active_menu.js"></script>
-      <script src="js/bootstrap.min.js"></script> -->
-       <script src="js/progressbar.js"></script>
-     <!-- <script src="js/percentage.js"></script> -->
-     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdUavLhqgUv-oBYBtCPXojKlG5rky138&callback=initMap"
+      <script src="js/bootstrap.min.js"></script> 
+      <script src="js/progressbar.js"></script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTdUavLhqgUv-oBYBtCPXojKlG5rky138&callback=initMap"
   type="text/javascript"></script>
       <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
-    <!--   <script src="js/slick_slider.js"></script> -->
-      <script src="js/script.js"></script>
+      <!-- <script src="js/script.js"></script> -->
+      <script src="js/change_navbar.js"></script>
+      <script src="js/change_active_menu.js"></script>
+      
+      <script src="js/filter_image.js"></script>
+      <script src="js/map.js"></script>
+      <script src="js/percentage.js"></script>
+      <script src="js/slick_slider.js"></script>
    </body>
 </html>
