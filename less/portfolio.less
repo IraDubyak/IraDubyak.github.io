@@ -29,6 +29,12 @@
         }
         button {
             .general_button;
+            transition: 0.3s;
+            &:hover {
+                transition: 0.3s;
+                color: black;
+                border-color: black;
+            }
         }
     }
 }
@@ -144,8 +150,8 @@
    
 }
  .active:after {
-        border-bottom: 2px solid @hover_icon;
-    }
+    border-bottom: 2px solid @hover_icon;
+}
 
 .filterDiv {
   display: none;
