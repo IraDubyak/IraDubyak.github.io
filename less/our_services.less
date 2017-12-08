@@ -1,4 +1,7 @@
 .our_services {
+    div.vertical_tabs button.active {
+        background-color: @hover_icon;
+    }
     background-color: @bgcolor;
     section {
     .each_block_header;
@@ -8,20 +11,38 @@
         margin: 0 auto;
         padding-bottom: 120px;
         width: 1030px;
-        ul {
+        .vertical_tabs {
             float: left;
             margin-right: 43px;
             .icon;
-            li {
+            .tabVerticalLinks {
+                display: block;
+                border: none;
                 cursor: pointer;
                 margin-bottom: 15px;
                 font-size: 28px;
-                &:last-child {
+                &:last-of-type {
                     margin-bottom: 0;
                 }
             }
         }
-        
+    }
+    .tabVerticalContent {
+        width: 398px;
+        overflow: hidden;
+        p:first-of-type {
+            .bigger_paragraph;
+            margin-top: 30px;
+            strong:first-of-type {
+                color: @hover_icon;
+            }
+        }
+        p:last-of-type {
+            margin-top: 25px;
+            strong {
+                color: @hover_icon;
+            }
+        }
     }
 }
 .leftside_bar {
@@ -45,23 +66,7 @@
     top: 11px;
 }
 
-.graphic_design {
-    width: 398px;
-    overflow: hidden;
-    p:first-of-type {
-        .bigger_paragraph;
-        margin-top: 30px;
-        strong:first-of-type {
-            color: @hover_icon;
-        }
-    }
-    p:last-of-type {
-        margin-top: 25px;
-        strong {
-            color: @hover_icon;
-        }
-    }
-}
+
 .circular_percentage_bar {
     float: right;
 }
