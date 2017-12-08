@@ -1,5 +1,6 @@
 .team_cta {
     background-image: url(../images/team-cta.png);
+    background-size: cover;
     width: 100%;
     p {
         color: @h1color;
@@ -14,5 +15,11 @@
     button {
         .general_button;
         margin: 28px 0 57px;
+        transition: 0.3s;
+        &:hover {
+            border-color: @hover_icon;
+            color: @hover_icon;
+            transition: 0.3s;
+        }
     } 
 }
