@@ -1,20 +1,24 @@
 .about_us_details {
+    div.tabs button.active {
+        background-color: @hover_icon;
+    }
     background-color: @bgcolor;
     padding-bottom: 101px;
     section {
         .clearfix;
         .each_block_header;
-        ul {
+        .tabs {
             .clearfix;
             margin: auto;
             width: 215px;
             .icon;
-            li {
+            .tablinks {
+                border: none;
                 cursor: pointer;
                 float: left;
                 font-family: "computer mouse";
                 margin-right: 25px;
-                &:last-child {
+                &:last-of-type {
                     margin-right: 0;
                 }
             }
@@ -37,7 +41,7 @@
     right: 13px;
     font-size: 52px;
 }
-.wrapper {
+.tabcontent {
     .clearfix;
     margin: 61px auto 0;
     width: 965px;
