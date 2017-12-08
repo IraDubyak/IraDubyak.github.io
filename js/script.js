@@ -130,6 +130,37 @@ function removeClass(element, name) {
   element.className = arr1.join(" ");
 }
 
+function openDetail(evt, detailsName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(detailsName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("activeTab").click();
+
+function openVerticalDetail(evt, detailsName) {
+    var i, tabVerticalContent, tabVerticalLinks;
+    tabVerticalContent = document.getElementsByClassName("tabVerticalContent");
+    for (i = 0; i < tabVerticalContent.length; i++) {
+        tabVerticalContent[i].style.display = "none";
+    }
+    tabVerticalLinks = document.getElementsByClassName("tabVerticalLinks");
+    for (i = 0; i < tabVerticalLinks.length; i++) {
+        tabVerticalLinks[i].className = tabVerticalLinks[i].className.replace(" active", "");
+    }
+    document.getElementById(detailsName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("activeVerticalTab").click();
 
 //tabs on portfolio
 $(".tab").click(function (e) {
